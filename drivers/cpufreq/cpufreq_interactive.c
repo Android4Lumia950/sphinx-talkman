@@ -1735,7 +1735,6 @@ static int __init cpufreq_interactive_init(void)
 	}
 
 	spin_lock_init(&speedchange_cpumask_lock);
-	spin_lock_init(&above_hispeed_delay_lock);
 	mutex_init(&gov_lock);
 	mutex_init(&sched_lock);
 	speedchange_task =
